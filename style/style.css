@@ -1,0 +1,723 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button{
+    border-radius: 10px;
+}
+/* 
+body{
+    height:200px ;
+    width: 900px;
+    background-color: #041B15;
+
+} */
+@media (max-width :500px){
+    .hide{
+        display: none;
+    }
+    .filter-black{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: #041B15;
+        opacity: 0.5;
+    }
+    li{
+        list-style: none;
+    }
+    ul a{
+        color: #84CAE7;
+        text-decoration: none;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    ul{
+        display: flex;
+        background-color: #136F63;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    header{
+        height:50px ;
+        width: 100%;
+        background-color: #041B15;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #4CE0D2;
+        font-size: 30px;
+    }
+    main{
+        height: 300px;
+        width: 100%;
+        background-image: url(../photos/Gentle\ man.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main p{
+        position: absolute;
+        display: inline-block;
+        color: #84CAE7;
+        top: 40%;
+        left: 22%;
+        font-size: 31px;
+    }
+    main content{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-size: 60px;
+        flex-direction: column;
+        /* background-color: red; */
+    }
+
+    .searshing{
+        position: absolute;
+        left: 29%;
+        margin-top: 5px;
+        border-radius: 10px;
+        height: 30px;
+        text-align: center; font-size:10px;
+    }
+    .men{
+        height: 320px;
+        width: 100%;
+        background-color: #84CAE7;
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 45px;
+        color: #041B15;
+    }
+    .suit_shirt_men1{
+        width: 55%;
+        height: 110px;
+        border-radius: 15px 15px 0 0;
+        position: relative;
+    }
+    .clickable{
+        color: #485C58;
+        font-size: 15px;
+    
+    }
+    
+    .suit_shirt_men2{
+        width: 55%;
+        height: 110px;
+        /* background-color: #041B15; */
+        border-radius: 15px 15px 0 0;
+        margin-top: 15px;    
+    }
+    .men_title , .suit_shirt_men1, .suit_shirt_men2{
+        transform: translate(0px,0);
+    }
+    .men .content_1 .front,.men .content_2 .front{
+        background-color:white;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px 20px 0 0 ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 101;
+        position: absolute;
+        transition-duration: 1s;
+    }
+    .men .content_1:hover .back,.men .content_2:hover .back{
+        transform: scale(1);
+    }
+    .man .back{
+    } 
+    .back{
+        transition-delay: 0.75;
+        transition-duration: 1s;
+        transform: scale(0);
+        height: 100%;
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+        /* background-color: red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 20px;
+        position: absolute;
+    }
+    .women .back{
+        transform: scale(1);
+    }
+    .back img{
+        width: 50px;
+        height: 60px;
+        margin-bottom: 10px;
+        border-radius: 15px;
+    }
+    .back button{
+        color: white;
+        background-color: #84CAE7;
+        border-radius: 10px;
+        width: 80px;
+        height: 30px;
+    }
+    .suit_shirt_men1:hover .front{
+        transform: scale(0);
+    }
+    .suit_shirt_men2:hover .front{
+        transform: scale(0);
+    }
+    /* women */
+    .women .front {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px 15px 0 0;
+        background-color: white;
+        position: absolute;
+        transform: scale(1);
+        transition-duration:1s ;
+        transform-origin: right bottom  ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .front h4 {
+        font-size: 35px;
+    }
+    .front p{
+        font-size: 15px;
+    }
+    .women{
+        height: 320px;
+        width: 100%;
+        background-color: #84CAE7;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 45px;
+        color: #041B15;
+    }
+    .women .dress_women{
+        width: 180px;
+        height: 210px;
+        border-radius: 8px;
+        /* background-color: #4CE0D2; */
+        position: relative;
+        transform-style: preserve-3d;
+    }
+    .women .dress_women:hover .front{
+        transition-duration:1s;
+        transform: rotateY(90deg);
+    }
+    .dress_women .back{
+        border-radius: 8px;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        /* background-color: rgb(191, 160, 223); */
+        transform-origin: center;
+    }
+    .dress_women .front{
+        background-color: white;
+        border-radius: 8px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .dress_women .back img{
+        width: 100px;
+        height: 100px;
+    }
+    hr{
+        height: 5px;
+        background-color: #041B15;
+    }
+    .subscribtion {
+        display: flex;
+        height: 320px;
+        width: 100%;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        padding-top: 10px;
+    }
+    
+    .subscribtion h3{
+        font-size: 35px;
+    }
+    .subscribtion p{
+        font-size: 12px;
+    }
+    form{
+        top: 40%;
+        position: relative;
+        transform: translate(0px, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .email {
+        margin:10% 0 ;
+    }
+    .password{
+        margin-bottom: 10%;
+    }
+    .email , .password ,.Name{
+        width: 200px;
+        height: 30px;
+        border: #041B15 solid 1px;
+        border-radius: 10px;
+    }
+    .submit{
+        width: 125px;
+        height: 28px;
+        border-radius: 10px;
+        background-color: #84CAE7;
+    }
+    footer{
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 30px;
+    }
+    
+}
+@media (min-width :501px){
+    hr{
+        height: 5px;
+        background-color: #041B15;
+    }
+    .header_{
+        width: 100%px;
+        height: 40px;
+        background-color: #041B15;
+        overflow: hidden;
+        padding-right: 5%;
+        padding-top: 10px;
+        padding-left: 3%;
+        display: block;
+    }
+    .header , .header_ p {
+        display: inline-block;
+        color: #4CE0D2;
+        float: left;
+    }
+    
+    .header_ nav{
+        display: inline-block;
+        float: right;
+    }
+    .header_ nav ul {
+        display: inline-block;
+        display: flex;
+    }
+    .header_ nav ul li{
+        list-style: none;
+        margin: 15px;
+        margin-top: 0;
+        color: #84CAE7;
+        text-decoration: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    main{
+        height: 450px;
+        position: relative;
+        background-image: url(../photos/Gentle\ man.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .filter-black{
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        background-color: #041B15;
+        opacity: 0.6;
+    }
+    .content{
+        position: absolute;
+        filter:blur(0px);
+        z-index: 100;
+        display: grid;
+        place-items: center;
+    }
+    .content p{
+        color: #84CAE7;
+        /* text-align: center; */
+        font-size: 60px;
+    }
+    .content .searshing{
+        width: 300px;
+        height: 40px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 20px;
+    }
+    .men{
+        height:auto;
+        display:grid;
+        grid-template-rows: auto 300px ;
+        grid-template-columns: 1fr 1fr 1fr;
+        place-items: center;
+        background-color: #84CAE7;
+    }
+    .men_title{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        color: #041B15;
+        font-size: 50px;
+        transform: translate(0,30%);
+    }
+    .men img{
+        width: 150px;
+        height: 150px;
+        margin-bottom: 25px;
+        border-radius: 15px;
+    }
+    .men button{
+        width: 120px;
+        height: 30px;
+        border-radius: 15px;
+    }
+    .suit_shirt_men1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .men .content_1,.men .content_2,.men .content_3{
+        position: relative;
+        width: 250px;
+        height: 250px;
+        /* overflow: hidden; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .men .front{
+        border-radius: 25px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color:white ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition-duration: 1s;
+        transform-origin: right bottom;
+    }
+    .men .front h4{
+        font-size: 45px;
+        color: #041B15;
+    }
+    .men .front p{
+        font-size: 15px;
+        color: #263A37;
+    }
+    
+    .men .back{
+        border-radius: 25px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .men .content_1 .back ,.men .content_2 .back , .men .content_3 .back{
+        transform-origin: top left;
+        transition-duration: 1s;
+        transform:scale(0);
+    }
+    .men .content_1:hover .back ,.men .content_2:hover .back ,.men .content_3:hover .back{
+        transform-origin: right top;
+        transform: scale(1);
+
+    }
+    .men .content_1:hover .front{
+        transform: scale(0);
+    }
+    .men .suit_shirt_men2 .content_2:hover .front{
+        transform: scale(0);
+    }
+    .men .suit_shirt_men3 .content_3:hover .front{
+        transform: scale(0);
+    }
+    .hide2{
+        display: none;
+        transform: scale(0);
+    }
+    /* ............. women ............ */
+    .women{
+        width: 100%;
+        height: 400px;
+        background-color: #84CAE7;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr;
+    }
+    .women .women_title{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        font-size: 50px;
+        text-align: center;
+        color: #041B15;
+    }
+    .women .dress_women {
+        width: 100%;
+        height: 100%;
+        background-color: #84CAE7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .women .content_w{
+        position: relative;
+        width: 60%;
+        height: 70%;
+        /* background-color: green; */
+        transform-style: preserve-3d;
+        perspective: 15px;
+        transition-duration: 1s;
+    }
+    .women .content_w:hover{
+        transform: rotateY(180deg);
+    }
+    .women .back{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        /* background-color: red; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        transform: rotateY(180deg);
+    }
+    .women .content_w .back img{
+        width: 120px;
+        height: 130px;
+        border-radius: 15px;
+    }
+    .women .content_w .back button{
+        background-color: white;
+        width: 150px;
+        height: 40px;
+        font-size: 25px;
+        border-radius: 15px;
+    }
+    .women .content_w .back button:hover{
+        background-color:#4CE0D2;
+    }
+    .women .front {
+        /* transform: rotateY(180deg); */
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        /* transform: scale(0); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        backface-visibility: hidden;
+        border-radius: 15px;
+    }
+    /* .......... children ........... */
+    .child{
+        height: 800px;
+        width: 100%;
+        background-color: #84CAE7;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        grid-template-rows: auto 1fr;
+        font-size: 45px;
+        color: #041B15;
+    }
+    .child .container{
+        width: 400px;
+        height: 600px;
+        background-color: rebeccapurple;
+        border-radius: 20px;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+    }
+    .child img {
+        width: 200px;
+        height: 200px;
+        border-radius: 20px 0 0 0 ;
+    }
+    .child .container .first{
+        border-radius: 20px 0 0 0 ;    
+    }
+    .child .container .second{
+        border-radius: 0 20px 0 0 ;    
+    }
+    .child .container .third{
+        width:400px;
+        height: 400px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border-radius: 0 0 20px 20px;
+    }
+    .child h3{
+        margin-bottom: 25px;
+    }
+    
+    .child .data{
+        background-color: #4CE0D2CC;
+        opacity: 0;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: #041B15 solid 3px;
+        transition-duration: 1s;
+
+    }
+    .child .data_first{
+        border-radius: 20px 0 0 0 ;
+    }
+    .child .first:hover .data_first{
+        opacity: 1;
+    }
+    .child .data_first:hover{
+        opacity: 1;
+    }
+    
+    /* .data_first::after{
+        content: "";
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        background-color: transparent;
+        right: 0;
+        transform: translate(43px,0) rotate(180deg);
+        border-left: transparent solid 20px;
+        border-top: transparent solid 20px;
+        border-right: burlywood solid 20px;
+        border-bottom: transparent solid 20px;
+    } */
+    .child .data h3{
+        font-size:45px ;
+        color: #041B15;
+        opacity: 15;
+    }
+    .child .data p{
+        margin-top: 0px;
+        margin-bottom: 30px;
+        font-size:15px ;
+        color: #263A37;
+    } 
+    .child .data_first button, .data_second button{
+        width: 120px;
+        height: 30px;
+        background-color: #EEEEEE;
+        transition-duration: 0.5s;
+    }
+    .child .data button:hover{
+        background-color: #84CAE7;
+    }
+    .child .data_second{
+        right: 0;
+        border-radius: 0 20px 0 0 ;
+    }
+    .child .second:hover .data_second{
+        opacity: 1;
+    }
+    .child .data_second:hover{
+        opacity: 1;
+    }
+    .child .data_third{
+        transform-origin: top left;
+        transform: translateY(100%) scale(2) ;
+        border-radius: 0 0 10px 10px;
+    }
+    .child .third:hover .data_third{
+        opacity: 1;
+    }
+    .child .data_third:hover{
+        opacity: 1;
+    }
+    .child .data_third button{
+        width: 120px;
+        height: 25px;
+    }
+    /* ............. subscribion ................ */
+    .subscribtion{
+        height: 350px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr;
+        place-items: center;
+    }
+    .subscribtion h3{
+        font-size: 45px;
+        color: #041B15;
+        
+    }
+    .subscribtion p{
+        font-size: 15px;
+        color:#263A37;
+    }
+    .the_form{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+    .the_form .password,.the_form .email , .the_form .Name{
+        width: 250px;
+        height: 35px;
+        border-radius: 10px;
+    }
+    .the_form .submit{
+        background-color: red;
+        width:  200px;
+        height:30px;
+        border-radius: 10px;background-color: aquamarine;
+    }
+    .the_form input{
+        margin: -15px;
+    }
+    footer{
+        height: 30px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+    }
+}

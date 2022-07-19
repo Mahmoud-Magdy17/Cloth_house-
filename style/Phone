@@ -1,0 +1,281 @@
+@media (max-width :500px){
+    .hide{
+        display: none;
+    }
+    .filter-black{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: #041B15;
+        opacity: 0.5;
+    }
+    li{
+        list-style: none;
+    }
+    ul a{
+        color: #84CAE7;
+        text-decoration: none;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    ul{
+        display: flex;
+        background-color: #136F63;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    header{
+        height:50px ;
+        width: 100%;
+        background-color: #041B15;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #4CE0D2;
+        font-size: 30px;
+    }
+    main{
+        height: 300px;
+        width: 100%;
+        background-image: url(../photos/Gentle\ man.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main p{
+        position: absolute;
+        display: inline-block;
+        color: #84CAE7;
+        top: 40%;
+        left: 22%;
+        font-size: 31px;
+    }
+    main content{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-size: 60px;
+        flex-direction: column;
+        /* background-color: red; */
+    }
+
+    .searshing{
+        position: absolute;
+        left: 29%;
+        margin-top: 5px;
+        border-radius: 10px;
+        height: 30px;
+        text-align: center; font-size:10px;
+    }
+    .Men{
+        height: 320px;
+        width: 100%;
+        background-color: #84CAE7;
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 45px;
+        color: #041B15;
+    }
+    .suit_shirt_men1{
+        width: 55%;
+        height: 110px;
+        border-radius: 15px 15px 0 0;
+        position: relative;
+    }
+    .clickable{
+        color: #485C58;
+        font-size: 15px;
+    
+    }
+    
+    .suit_shirt_men2{
+        width: 55%;
+        height: 110px;
+        /* background-color: #041B15; */
+        border-radius: 15px 15px 0 0;
+        margin-top: 15px;    
+    }
+    .men_title , .suit_shirt_men1, .suit_shirt_men2{
+        transform: translate(0px,0);
+    }
+    .men .content_1 .front,.men .content_2 .front{
+        background-color:white;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px 20px 0 0 ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 101;
+        position: absolute;
+        transition-duration: 1s;
+    }
+    .men .content_1:hover .back,.men .content_2:hover .back{
+        transform: scale(1);
+    }
+    .man .back{
+    } 
+    .back{
+        transition-delay: 0.75;
+        transition-duration: 1s;
+        transform: scale(0);
+        height: 100%;
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+        /* background-color: red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 20px;
+        position: absolute;
+    }
+    .women .back{
+        transform: scale(1);
+    }
+    .back img{
+        width: 50px;
+        height: 60px;
+        margin-bottom: 10px;
+        border-radius: 15px;
+    }
+    .back button{
+        color: white;
+        background-color: #84CAE7;
+        border-radius: 10px;
+        width: 80px;
+        height: 30px;
+    }
+    .suit_shirt_men1:hover .front{
+        transform: scale(0);
+    }
+    .suit_shirt_men2:hover .front{
+        transform: scale(0);
+    }
+    /* women */
+    .women .front {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px 15px 0 0;
+        background-color: white;
+        position: absolute;
+        transform: scale(1);
+        transition-duration:1s ;
+        transform-origin: right bottom  ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .front h4 {
+        font-size: 35px;
+    }
+    .front p{
+        font-size: 15px;
+    }
+    .women{
+        height: 320px;
+        width: 100%;
+        background-color: #84CAE7;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 45px;
+        color: #041B15;
+    }
+    .women .dress_women{
+        width: 180px;
+        height: 210px;
+        border-radius: 8px;
+        /* background-color: #4CE0D2; */
+        position: relative;
+    }
+    .women .dress_women:hover .front{
+        transition-duration:1s;
+        transform: rotateY(90deg);
+    }
+    .dress_women .back{
+        border-radius: 8px;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        /* background-color: rgb(191, 160, 223); */
+        transform-origin: center;
+    }
+    .dress_women .front{
+        background-color: white;
+        border-radius: 8px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .dress_women .back img{
+        width: 100px;
+        height: 100px;
+    }
+    hr{
+        height: 5px;
+        background-color: #041B15;
+    }
+    .subscribtion {
+        display: flex;
+        height: 320px;
+        width: 100%;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        padding-top: 10px;
+    }
+    
+    .subscribtion h3{
+        font-size: 35px;
+    }
+    .subscribtion p{
+        font-size: 12px;
+    }
+    form{
+        top: 40%;
+        position: relative;
+        transform: translate(0px, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .email {
+        margin:10% 0 ;
+    }
+    .password{
+        margin-bottom: 10%;
+    }
+    .email , .password ,.name{
+        width: 200px;
+        height: 30px;
+        border: #041B15 solid 1px;
+        border-radius: 10px;
+    }
+    .submit{
+        width: 125px;
+        height: 28px;
+        border-radius: 10px;
+        background-color: #84CAE7;
+    }
+    footer{
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 30px;
+    }
+    
+}
